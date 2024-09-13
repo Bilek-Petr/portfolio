@@ -21,8 +21,10 @@
       "greeting": "Hey, I'm",
       "name": "Petr Bilek",
       "description": "Just a wanderer who ended up developing web apps"
-    },
-    "sections": [
+    }
+  },
+  "sections": {
+    "lists": [
       {
         "id": 1,
         "title": "About Me",
