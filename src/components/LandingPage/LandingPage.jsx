@@ -1,8 +1,7 @@
 export default function LandingPage({ data }) {
-  console.log(data);
   return (
     <>
-      <section className="h-full px-4 pt-28 sm:px-8">
+      <section className="mb-32 h-full px-4 pt-6 sm:mb-20 sm:px-8 2xl:pt-24">
         <span className="text-descriptionText relative font-special font-semibold uppercase sm:bottom-[-30px]">
           {data.greeting}
         </span>
