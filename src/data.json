@@ -19,7 +19,8 @@
   "landingPage": {
     "intro": {
       "greeting": "Hey, I'm",
-      "name": "Petr Bilek",
+      "firstName": "Petr",
+      "lastName": "Bílek",
       "description": "Just a wanderer who ended up developing web apps"
     }
   },
