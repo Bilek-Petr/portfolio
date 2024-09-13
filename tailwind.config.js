@@ -15,7 +15,7 @@ export default {
         mainAccent: "#1E1E1E",
       },
       fontSize: {
-        nameHeading: "clamp(5rem, 23vw, 16rem)",
+        nameHeading: "clamp(5rem, 21vw, 16rem)",
         descriptionText: "clamp(1.5rem, 3vw, 5rem)",
         navText: "clamp(3.25rem, 15vw, 6rem)",
       },

@@ -43,66 +43,68 @@
       }
     ]
   },
-  "aboutMe": {
-    "description": [
-      "I'm a 24-year-old and somehow I ended up developing apps.",
-      "Besides writing code, I love being outdoors. Most of the time, you'll find me running in the mountains or wandering around with a huge backpack.",
-      "I didn’t plan on becoming a developer - it kind of just happened. Even though... I studied IT in high school, the idea of an outdoor life seemed much more appealing. At university, I ended up living above the Arctic Circle for two years. During those never-ending winter nights, I found myself coding by the glow of my laptop, and here I am today.",
-      "I like to keep things simple, whether in my code or in life. A motto that keeps me grounded, whether I’m debugging for hours or running ultramarathons is: \"If you don't fail, you ain't even trying.\""
-    ]
-  },
-  "myJourney": {
-    "cards": [
-      {
-        "id": 1,
-        "title": "est. 1999",
-        "content": ""
-      },
-      {
-        "id": 2,
-        "title": "Highschool of tech. Frydek-Mistek",
-        "content": "Information technology, C#, Java, MySQL, PHP, Linux, Windows, Networks"
-      },
-      {
-        "id": 3,
-        "title": "Ostravska Univerzita",
-        "content": "Physical education and sport, Not much in field of IT :) Year of Erasmus in Norway, studied Extreme environments and Adventure Knowledge"
-      },
-      {
-        "id": 4,
-        "title": "Nord University - Bodo",
-        "content": "Norwegian language and society, One year programme focused mainly on the language"
-      },
-      {
-        "id": 5,
-        "title": "Right now",
-        "content": "Looking for an IT job - HTML, CSS, JS, React, SASS, Tailwind, MongoDB, Git"
-      }
-    ]
-  },
-  "projects": {
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vehicula dui a massa dictum, ut rhoncus nisl dignissim.",
-    "items": [
-      {
-        "id": 1,
-        "title": "Project 1",
-        "image": "project1.jpg"
-      },
-      {
-        "id": 2,
-        "title": "Project 2",
-        "image": "project2.jpg"
-      },
-      {
-        "id": 3,
-        "title": "Project 3",
-        "image": "project3.jpg"
-      },
-      {
-        "id": 4,
-        "title": "Project 4",
-        "image": "project4.jpg"
-      }
-    ]
+  "sectionsData": {
+    "aboutMe": {
+      "description": [
+        "I'm a 24-year-old and somehow I ended up developing apps.",
+        "Besides writing code, I love being outdoors. Most of the time, you'll find me running in the mountains or wandering around with a huge backpack.",
+        "I didn’t plan on becoming a developer - it kind of just happened. Even though... I studied IT in high school, the idea of an outdoor life seemed much more appealing. At university, I ended up living above the Arctic Circle for two years. During those never-ending winter nights, I found myself coding by the glow of my laptop, and here I am today.",
+        "I like to keep things simple, whether in my code or in life. A motto that keeps me grounded, whether I’m debugging for hours or running ultramarathons is: \"If you don't fail, you ain't even trying.\""
+      ]
+    },
+    "myJourney": {
+      "cards": [
+        {
+          "id": 1,
+          "title": "est. 1999",
+          "content": ""
+        },
+        {
+          "id": 2,
+          "title": "Highschool of tech. Frydek-Mistek",
+          "content": "Information technology, C#, Java, MySQL, PHP, Linux, Windows, Networks"
+        },
+        {
+          "id": 3,
+          "title": "Ostravska Univerzita",
+          "content": "Physical education and sport, Not much in field of IT :) Year of Erasmus in Norway, studied Extreme environments and Adventure Knowledge"
+        },
+        {
+          "id": 4,
+          "title": "Nord University - Bodo",
+          "content": "Norwegian language and society, One year programme focused mainly on the language"
+        },
+        {
+          "id": 5,
+          "title": "Right now",
+          "content": "Looking for an IT job - HTML, CSS, JS, React, SASS, Tailwind, MongoDB, Git"
+        }
+      ]
+    },
+    "projects": {
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vehicula dui a massa dictum, ut rhoncus nisl dignissim.",
+      "items": [
+        {
+          "id": 1,
+          "title": "Project 1",
+          "image": "project1.jpg"
+        },
+        {
+          "id": 2,
+          "title": "Project 2",
+          "image": "project2.jpg"
+        },
+        {
+          "id": 3,
+          "title": "Project 3",
+          "image": "project3.jpg"
+        },
+        {
+          "id": 4,
+          "title": "Project 4",
+          "image": "project4.jpg"
+        }
+      ]
+    }
   }
 }
