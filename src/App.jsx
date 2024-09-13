@@ -1,11 +1,15 @@
 import data from "./data.json";
 import Nav from "./components/Navigation/Nav";
+import LandingPage from "./components/LandingPage/LandingPage";
 import "./App.css";
 
 function App() {
   return (
     <>
-      <Nav items={data.navigation}></Nav>
+      <div className="h-[90svh]">
+        <Nav items={data.navigation}></Nav>
+        <LandingPage data={data.landingPage.intro}></LandingPage>
+      </div>
     </>
   );
 }
