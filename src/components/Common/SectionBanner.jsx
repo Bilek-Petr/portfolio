@@ -37,7 +37,7 @@ export default function SectionBanner({ bannerTitle, children }) {
 
       <div
         className={`banner-content transition-all duration-700 ease-in-out ${
-          isExpanded ? "max-h-screen" : "max-h-0"
+          isExpanded ? "max-h" : "max-h-0"
         } overflow-hidden`}
       >
         {children}
