@@ -46,10 +46,32 @@
   "sectionsData": {
     "aboutMe": {
       "description": [
-        "I'm a 24-year-old and somehow I ended up developing apps.",
-        "Besides writing code, I love being outdoors. Most of the time, you'll find me running in the mountains or wandering around with a huge backpack.",
-        "I didn’t plan on becoming a developer - it kind of just happened. Even though... I studied IT in high school, the idea of an outdoor life seemed much more appealing. At university, I ended up living above the Arctic Circle for two years. During those never-ending winter nights, I found myself coding by the glow of my laptop, and here I am today.",
-        "I like to keep things simple, whether in my code or in life. A motto that keeps me grounded, whether I’m debugging for hours or running ultramarathons is: \"If you don't fail, you ain't even trying.\""
+        {
+          "id": 1,
+          "text": "I'm a 24-year-old and somehow I ended up developing apps.",
+          "highlight": true
+        },
+        {
+          "id": 2,
+          "text": "Besides writing code, I love being outdoors. Most of the time, you'll find me running in the mountains or wandering around with a huge backpack.",
+          "highlight": false
+        },
+        {
+          "id": 3,
+          "text": "I didn’t plan on becoming a developer - it kind of just happened. Even though...",
+          "highlight": false
+        },
+        {
+          "id": 4,
+          "text": "I studied IT at high school, the idea of an outdoor life seemed much more appealing. At university, I ended up living above the Arctic Circle for two years. During those never-ending winter nights, I found myself coding by the glow of my laptop, and I ended up enjoying it.",
+          "highlight": false
+        },
+        {
+          "id": 5,
+          "text": "I like to keep things simple perhaps even minimalistic, whether it's my code or my life. A motto that keeps me grounded, whether I’m debugging for hours or running ultramarathons is",
+          "highlight": true,
+          "quote": "\"If you don't fail, you ain't even trying.\""
+        }
       ]
     },
     "myJourney": {
