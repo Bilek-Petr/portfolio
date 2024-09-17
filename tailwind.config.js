@@ -21,6 +21,10 @@ export default {
         sectionText: "clamp(2.5rem, 14vw, 14rem)",
         aboutMeText: "clamp(0.9rem, 1vw, 1.5rem)",
       },
+      boxShadow: {
+        "custom-black": "1.5px 1.5px 0px #000000",
+        "custom-black-hover": "5px 5px 0px #000000",
+      },
     },
   },
   plugins: [],

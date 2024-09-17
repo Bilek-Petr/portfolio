@@ -78,28 +78,34 @@
       "cards": [
         {
           "id": 1,
-          "title": "est. 1999",
-          "content": ""
+          "title": "est. 1999"
         },
         {
           "id": 2,
-          "title": "Highschool of tech. Frydek-Mistek",
-          "content": "Information technology, C#, Java, MySQL, PHP, Linux, Windows, Networks"
+          "title": "Highschool of tech. Frýdek-Místek",
+          "field": "Information technology",
+          "content": " C#, Java, MySQL, PHP, Linux, Windows, Networks",
+          "year": "2015 / 2019"
         },
         {
           "id": 3,
           "title": "Ostravska Univerzita",
-          "content": "Physical education and sport, Not much in field of IT :) Year of Erasmus in Norway, studied Extreme environments and Adventure Knowledge"
+          "field": "Physical education and sport, bc.",
+          "content": "Not much in the field of IT 🙂 Erasmus in Norway, studied Extreme environments and Adventure Knowledge",
+          "year": "2020 / 2023"
         },
         {
           "id": 4,
-          "title": "Nord University - Bodo",
-          "content": "Norwegian language and society, One year programme focused mainly on the language"
+          "title": "Nord University - Bodø",
+          "field": "Norwegian language and society",
+          "content": "One year programme focused mainly on the language",
+          "year": "2023 / 2024"
         },
         {
           "id": 5,
           "title": "Right now",
-          "content": "Looking for an IT job - HTML, CSS, JS, React, SASS, Tailwind, MongoDB, Git"
+          "field": "Looking for a frontend position",
+          "content": "HTML, CSS, JS, React, SASS, Tailwind, MongoDB, Git"
         }
       ]
     },
