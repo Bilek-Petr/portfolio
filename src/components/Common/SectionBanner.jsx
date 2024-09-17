@@ -8,7 +8,7 @@ export default function SectionBanner({ bannerTitle, children }) {
   };
 
   return (
-    <div className="section-banner group cursor-pointer overflow-hidden">
+    <div className="group relative cursor-pointer overflow-hidden">
       <div
         onClick={toggleExpand}
         className="flex h-[9rem] items-center justify-between border-t-[1px] border-mainAccent px-3 sm:px-6 lg:pt-7 xl:pt-12"
@@ -32,10 +32,10 @@ export default function SectionBanner({ bannerTitle, children }) {
             }`}
           >
             {/* Horizontal Line */}
-            <span className="absolute h-[1px] w-4 bg-mainAccent group-hover:bg-white"></span>
+            <span className="absolute h-[1px] w-3 bg-mainAccent group-hover:bg-white lg:w-4 xl:w-6"></span>
             {/* Vertical Line */}
             <span
-              className={`absolute h-[1px] w-4 bg-mainAccent transition-transform duration-300 ease-in-out group-hover:bg-white ${
+              className={`absolute h-[1px] w-3 bg-mainAccent transition-transform duration-300 ease-in-out group-hover:bg-white lg:w-4 xl:w-6 ${
                 isExpanded ? "rotate-0" : "rotate-90"
               }`}
             ></span>
@@ -44,7 +44,7 @@ export default function SectionBanner({ bannerTitle, children }) {
       </div>
 
       <div
-        className={`banner-content transition-all duration-700 ease-in-out ${
+        className={`banner-content relative z-10 transition-all duration-700 ease-in-out ${
           isExpanded ? "max-h-[100rem]" : "max-h-0"
         } overflow-hidden`}
       >
