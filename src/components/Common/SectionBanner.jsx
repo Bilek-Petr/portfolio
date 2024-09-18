@@ -8,10 +8,10 @@ export default function SectionBanner({ bannerTitle, children }) {
   };
 
   return (
-    <div className="group relative cursor-pointer overflow-hidden">
+    <div className="group relative overflow-hidden border-b-[1px] border-mainAccent">
       <div
         onClick={toggleExpand}
-        className="flex h-[9rem] items-center justify-between border-t-[1px] border-mainAccent px-3 sm:px-6 lg:pt-7 xl:pt-12"
+        className="flex h-[9rem] cursor-pointer items-center justify-between px-3 sm:px-6 lg:pt-7 xl:pt-12"
       >
         <h2
           className={`w-full font-heading text-sectionText font-bold uppercase tracking-tighter transition-none sm:translate-y-0 ${
