@@ -20,10 +20,21 @@ export default {
         navText: "clamp(3.25rem, 15vw, 6rem)",
         sectionText: "clamp(2.5rem, 14vw, 14rem)",
         aboutMeText: "clamp(0.9rem, 1vw, 1.5rem)",
+        projectDescription: "clamp(1.4rem, 2vw, 4rem)",
+        projectTitle: "clamp(2.5rem, 3vw, 6rem)",
       },
       boxShadow: {
         "custom-black": "1.5px 1.5px 0px #000000",
         "custom-black-hover": "5px 5px 0px #000000",
+      },
+      keyframes: {
+        scroll: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+      },
+      animation: {
+        scroll: "scroll 15s linear infinite",
       },
     },
   },

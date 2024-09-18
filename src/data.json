@@ -110,29 +110,50 @@
       ]
     },
     "projects": {
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vehicula dui a massa dictum, ut rhoncus nisl dignissim.",
+      "description": "Explore my projects below. For a more detailed overview, including setup instructions, technologies used, and features, check out the README files in the respective ",
       "items": [
         {
           "id": 1,
-          "title": "Project 1",
-          "image": "project1.jpg"
+          "title": "Photosnap Site",
+          "image": "/images/photosnap_site.webp",
+          "codeLink": "https://github.com/Bilek-Petr/photosnap_site",
+          "pageLink": "https://bilek-petr.github.io/photosnap_site/"
         },
         {
           "id": 2,
-          "title": "Project 2",
-          "image": "project2.jpg"
+          "title": "IP Tracker",
+          "image": "/images/ip_tracker.webp",
+          "codeLink": "https://github.com/Bilek-Petr/IpTracker",
+          "pageLink": "https://bilek-petr.github.io/IpTracker/"
         },
         {
           "id": 3,
-          "title": "Project 3",
-          "image": "project3.jpg"
+          "title": "Product list",
+          "image": "/images/desserts.webp",
+          "codeLink": "https://github.com/Bilek-Petr/product_list",
+          "pageLink": "https://bilek-petr.github.io/product_list/"
         },
         {
           "id": 4,
-          "title": "Project 4",
-          "image": "project4.jpg"
+          "title": "Multitheme calc",
+          "image": "/images/calc.webp",
+          "codeLink": "https://github.com/Bilek-Petr/calculator-app",
+          "pageLink": "https://bilek-petr.github.io/calculator-app/"
         }
       ]
     }
+  },
+  "techstack": {
+    "tools": [
+      "html",
+      "css",
+      "sass",
+      "tailwind",
+      "javascript",
+      "react",
+      "mongodb",
+      "git",
+      "figma"
+    ]
   }
 }
