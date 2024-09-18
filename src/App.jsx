@@ -1,8 +1,9 @@
 import data from "./data.json";
 import Nav from "./components/Navigation/Nav";
 import LandingPage from "./components/LandingPage/LandingPage";
-import "./App.css";
 import Sections from "./components/Sections/Sections";
+import Techstack from "./components/TechStack/Techstack";
+import "./App.css";
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
         sectionData={data.sectionsData}
         sectionLists={data.sections.lists}
       ></Sections>
+
+      <Techstack techData={data.techstack}></Techstack>
     </>
   );
 }
