@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 
-export default function SectionBanner({ bannerTitle, children }) {
+export default function SectionBanner({
+  bannerTitle,
+  children,
+  isHighlighted,
+}) {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const toggleExpand = () => {
@@ -8,7 +12,11 @@ export default function SectionBanner({ bannerTitle, children }) {
   };
 
   return (
-    <div className="group relative overflow-hidden border-b-[1px] border-mainAccent">
+    <div
+      className={`group relative overflow-hidden border-b-[1px] border-mainAccent ${
+        isHighlighted && "bg-mainAccent text-white"
+      }`}
+    >
       <div
         onClick={toggleExpand}
         className="flex h-[9rem] cursor-pointer items-center justify-between px-3 sm:px-6 lg:pt-7 xl:pt-12"
@@ -22,7 +30,7 @@ export default function SectionBanner({ bannerTitle, children }) {
         </h2>
 
         <button
-          className="relative flex size-8 items-center justify-center rounded-full border border-mainAccent group-hover:bg-mainAccent sm:size-10 xl:size-14"
+          className={`relative flex size-8 items-center justify-center rounded-full border border-mainAccent group-hover:bg-mainAccent sm:size-10 xl:size-14 ${isHighlighted && "border-white"} `}
           aria-expanded={isExpanded}
         >
           {/* Plus-minus icon */}
@@ -32,12 +40,14 @@ export default function SectionBanner({ bannerTitle, children }) {
             }`}
           >
             {/* Horizontal Line */}
-            <span className="absolute h-[1px] w-3 bg-mainAccent group-hover:bg-white lg:w-4 xl:w-6"></span>
+            <span
+              className={`absolute h-[1px] w-3 bg-mainAccent group-hover:bg-white lg:w-4 xl:w-6 ${isHighlighted && "bg-white"} `}
+            ></span>
             {/* Vertical Line */}
             <span
               className={`absolute h-[1px] w-3 bg-mainAccent transition-transform duration-300 ease-in-out group-hover:bg-white lg:w-4 xl:w-6 ${
                 isExpanded ? "rotate-0" : "rotate-90"
-              }`}
+              } ${isHighlighted && "bg-white group-hover:bg-mainAccent"}`}
             ></span>
           </div>
         </button>
