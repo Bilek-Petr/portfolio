@@ -14,7 +14,9 @@ const generateRandomGradient = () => {
 
   const color1 = getRandomColor();
   const color2 = "#fff";
-  return `linear-gradient(45deg, ${color1}, ${color2})`;
+  const randomAngle = Math.floor(Math.random() * 360);
+
+  return `linear-gradient(${randomAngle}deg, ${color1}, ${color2})`;
 };
 
 export { generateRandomGradient };
