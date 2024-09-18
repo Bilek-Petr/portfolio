@@ -16,10 +16,10 @@ export default function Projects({ sectionProjectsData, sectionList }) {
           <header className="flex-1">
             <p
               id="projects-heading"
-              className="text-projectDescription font-heading font-bold tracking-tighter"
+              className="font-heading text-projectDescription font-bold tracking-tighter"
             >
               {sectionProjectsData.description}
-              <span className="cursor-pointer text-red-500 underline">
+              <span className="cursor-pointer underline">
                 <a href="https://github.com/Bilek-Petr" target="_blank">
                   GitHub repositories
                 </a>
