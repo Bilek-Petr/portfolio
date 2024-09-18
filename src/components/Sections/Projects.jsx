@@ -1,16 +1,43 @@
-import React from "react";
+import React, { useState } from "react";
 import SectionBanner from "../Common/SectionBanner";
+import ProjectItem from "../Common/ProjectItem"; // Correct import path
 
 export default function Projects({ sectionProjectsData, sectionList }) {
+  const [expandedProject, setExpandedProject] = useState(null);
+
+  const handleToggle = (id) => {
+    setExpandedProject(expandedProject === id ? null : id);
+  };
+
   return (
-    <section id="projects">
+    <section id="projects" aria-labelledby="projects-heading">
       <SectionBanner bannerTitle={sectionList}>
-        {sectionProjectsData.items.map((item, index) => (
-          <div key={index}>
-            <p>{item.id}</p>
-            <p>{item.title}</p>
+        <div className="m-auto flex w-11/12 max-w-screen-2xl flex-col gap-7 sm:flex-row lg:gap-20 lg:py-20">
+          <header className="flex-1">
+            <p
+              id="projects-heading"
+              className="text-projectDescription font-heading font-bold tracking-tighter"
+            >
+              {sectionProjectsData.description}
+              <span className="cursor-pointer text-red-500 underline">
+                <a href="https://github.com/Bilek-Petr" target="_blank">
+                  GitHub repositories
+                </a>
+              </span>
+            </p>
+          </header>
+
+          <div className="my-10 flex-1 sm:my-0">
+            {sectionProjectsData.items.map((item) => (
+              <ProjectItem
+                key={item.id}
+                item={item}
+                isExpanded={expandedProject === item.id}
+                onToggle={handleToggle}
+              />
+            ))}
           </div>
-        ))}
+        </div>
       </SectionBanner>
     </section>
   );
