@@ -14,7 +14,7 @@ export default function SectionBanner({ bannerTitle, children }) {
         className="flex h-[9rem] items-center justify-between border-t-[1px] border-mainAccent px-3 sm:px-6 lg:pt-7 xl:pt-12"
       >
         <h2
-          className={`text-sectionText w-full font-heading font-bold uppercase tracking-tighter transition-none sm:translate-y-0 ${
+          className={`w-full font-heading text-sectionText font-bold uppercase tracking-tighter transition-none sm:translate-y-0 ${
             isExpanded && "overflow-hidden"
           }`}
         >
