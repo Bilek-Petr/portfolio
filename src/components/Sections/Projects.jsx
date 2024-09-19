@@ -19,7 +19,10 @@ export default function Projects({ sectionProjectsData, sectionList }) {
               className="font-heading text-projectDescription font-bold tracking-tighter"
             >
               {sectionProjectsData.description}
-              <span className="cursor-pointer underline">
+              <span
+                className="link-custom !inline cursor-pointer underline hover:text-white" //temporary !important fix
+                style={{ "--tw-shadow-color": "#1E1E1E" }}
+              >
                 <a href="https://github.com/Bilek-Petr" target="_blank">
                   GitHub repositories
                 </a>

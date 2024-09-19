@@ -1,66 +1,74 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import SectionBanner from "../Common/SectionBanner";
 import ToggleButton from "../Common/Button";
+import classNames from "classnames";
 
 export default function AboutMe({ sectionAboutMeData, sectionList }) {
   const [isTellToggled, setIsTellToggled] = useState(false);
+  const contentRef = useRef(null);
 
-  const toggleTell = () => {
-    setIsTellToggled(!isTellToggled);
-  };
+  const toggleTell = () => setIsTellToggled((prevState) => !prevState);
+
+  useEffect(() => {
+    if (contentRef.current) {
+      contentRef.current.style.maxHeight = isTellToggled
+        ? `${contentRef.current.scrollHeight}px`
+        : "calc(3 * 6.5rem + 1rem)"; // Adjust height for visible content
+    }
+  }, [isTellToggled]);
+
+  const paragraphClassNames = (index) =>
+    classNames(
+      "mb-4 transform text-base leading-relaxed transition-opacity duration-500 ease-in-out",
+      {
+        "opacity-100": isTellToggled || index < 3,
+        "opacity-0": !isTellToggled && index >= 3,
+      },
+    );
 
   return (
     <section id="about-me">
       <SectionBanner bannerTitle={sectionList} isHighlighted={true}>
-        <div className="m-auto flex w-[95%] max-w-screen-2xl flex-col sm:flex-row-reverse sm:gap-x-8 lg:py-20">
+        <div className="max-w-screen-[1800px] m-auto flex w-[95%] flex-col sm:flex-row-reverse sm:gap-x-12 sm:py-20 lg:gap-x-36 xl:gap-x-48">
           {/* Image Column */}
-          <div className="mb-6 sm:mb-0 sm:w-1/3">
+          <div className="mb-6 flex-shrink-0 sm:mb-0 sm:w-1/3">
             <img
               src="/images/profile_photo_phone.webp"
               alt="Profile Photo"
-              className="h-auto w-full object-cover"
+              className="h-auto max-h-[40rem] w-full object-cover"
             />
           </div>
 
           {/* Paragraph Column */}
-          <div className="flex flex-col justify-center sm:w-2/3">
+          <div className="relative flex flex-col sm:w-2/3">
             <div
-              className={`overflow-hidden transition-[max-height] duration-700 ease-in-out ${
-                isTellToggled ? "max-h-[9999px]" : "max-h-[15rem]"
-              }`}
+              ref={contentRef}
+              className="transition-max-height overflow-hidden duration-500 ease-in-out"
             >
               {sectionAboutMeData.description.map((paragraph, index) => (
-                <div
-                  key={index}
-                  className={`mb-4 transform text-base leading-relaxed transition-all duration-500 ease-in-out ${
-                    isTellToggled || index < 3
-                      ? "translate-y-0 opacity-100"
-                      : "-translate-y-8 opacity-0"
-                  }`}
-                >
+                <div key={index} className={paragraphClassNames(index)}>
                   <p
-                    className={`${
-                      paragraph.highlight ? "font-bold" : "text-pretty"
-                    }`}
+                    className={classNames(
+                      paragraph.highlight
+                        ? "text-3xl font-bold lg:text-5xl"
+                        : "text-pretty sm:text-base lg:text-lg",
+                    )}
                   >
                     {paragraph.text}
                   </p>
-                  {paragraph?.quote && (
-                    <blockquote className="mt-2 font-heading text-2xl">
-                      {paragraph.quote}
-                    </blockquote>
-                  )}
                 </div>
               ))}
             </div>
 
             {/* Button to toggle paragraphs */}
-            <ToggleButton
-              onClick={toggleTell}
-              isToggled={isTellToggled}
-              textOn="Hide it"
-              textOff="Tell me more!"
-            />
+            <div className="link-custom flex w-full justify-center overflow-hidden py-6">
+              <ToggleButton
+                onClick={toggleTell}
+                isToggled={isTellToggled}
+                textOn="HIDE IT"
+                textOff="TELL ME MORE!"
+              />
+            </div>
           </div>
         </div>
       </SectionBanner>

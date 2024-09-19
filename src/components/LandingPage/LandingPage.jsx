@@ -1,7 +1,10 @@
 export default function LandingPage({ data }) {
   return (
     <>
-      <section className="mb-32 h-full px-4 pt-20 sm:mb-20 sm:px-8 2xl:pt-24">
+      <section
+        className="link-custom h-full w-full px-4 pb-32 pt-20 sm:px-8 sm:py-28 2xl:pt-24"
+        style={{ "--tw-shadow-color": "#1E1E1E" }}
+      >
         <span className="relative font-special text-descriptionText font-semibold uppercase sm:bottom-[-30px]">
           {data.greeting}
         </span>
