@@ -47,7 +47,7 @@ export default function Techstack({ techData }) {
       <h2 className="px-3 text-sectionText font-bold uppercase tracking-[-0.075em] sm:px-6">
         Tech Stack
       </h2>
-      <div className="m-auto mb-8 flex max-w-screen-2xl flex-col overflow-hidden">
+      <div className="max-w-screen-[1800px] m-auto mb-8 flex flex-col overflow-hidden">
         <div className="flex flex-wrap items-center justify-center gap-y-12 py-8 sm:gap-y-6">
           {techData.tools.map((tool, index) => {
             const IconComponent = toolIcons[tool];
