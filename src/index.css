@@ -46,6 +46,38 @@ body {
   transform: translateY(-50%) rotate(0);
 }
 
-ul {
-  transition: transform 0.7s ease;
+/* styles.css */
+.link-custom {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  box-shadow: inset 0 0 0 0 var(--tw-shadow-color);
+  color: var(--tw-shadow-color, white);
+
+  transition:
+    color 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out;
+}
+
+.link-custom::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--tw-shadow-color);
+  transition: transform 0.5s;
+  transition-timing-function: cubic-bezier(1, -0.09, 0.49, 1.07);
+  transform: scaleX(0);
+  transform-origin: left;
+  z-index: -1;
+}
+
+.link-custom:hover::before {
+  transform: scaleX(1);
+}
+
+.link-custom:hover {
+  color: #ffffff;
 }
