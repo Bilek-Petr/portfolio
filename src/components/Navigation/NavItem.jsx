@@ -7,7 +7,7 @@ export default function NavItem({ title, link, isScrolled, toggleExpanded }) {
     >
       <a
         href={link}
-        className={`font-heading text-[3rem] font-bold uppercase tracking-[-0.2rem] sm:text-xs sm:font-medium sm:tracking-normal 2xl:text-lg ${isScrolled ? "sm:text-white" : "text-mainAccent"}`}
+        className={`font-heading text-[3rem] font-bold uppercase tracking-[-0.2rem] sm:text-xs sm:font-medium sm:tracking-normal 2xl:text-sm ${isScrolled ? "sm:text-white" : "text-mainAccent"}`}
         onClick={toggleExpanded}
       >
         {title}
