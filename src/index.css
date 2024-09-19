@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Archivo", "system-ui", "sans-serif";
   color: #1e1e1e;
@@ -40,4 +44,8 @@ body {
 
 .plusminus.active:after {
   transform: translateY(-50%) rotate(0);
+}
+
+ul {
+  transition: transform 0.7s ease;
 }
