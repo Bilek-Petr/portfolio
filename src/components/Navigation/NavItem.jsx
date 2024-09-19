@@ -1,11 +1,14 @@
 import React from "react";
 
-export default function NavItem({ title, link }) {
+export default function NavItem({ title, link, isScrolled, toggleExpanded }) {
   return (
-    <li className="border-mainAccent flex w-full justify-center whitespace-nowrap border-t-2 py-11 last-of-type:border-b-2 sm:border-t-0 sm:px-2 sm:py-1 sm:last-of-type:rounded-full sm:last-of-type:border-[1.5px]">
+    <li
+      className={`relative z-10 flex w-full justify-center whitespace-nowrap border-t-2 border-mainAccent py-11 last-of-type:border-b-2 sm:border-t-0 sm:px-2 sm:py-1 sm:last-of-type:rounded-full sm:last-of-type:border-[1.5px] ${isScrolled ? "sm:border-white" : "sm:border-mainAccent"} `}
+    >
       <a
         href={link}
-        className="font-heading text-navText font-bold uppercase tracking-[-0.3rem] sm:text-xs sm:font-medium sm:tracking-normal"
+        className={`font-heading text-[3rem] font-bold uppercase tracking-[-0.2rem] sm:text-xs sm:font-medium sm:tracking-normal 2xl:text-lg ${isScrolled ? "sm:text-white" : "text-mainAccent"}`}
+        onClick={toggleExpanded}
       >
         {title}
       </a>
