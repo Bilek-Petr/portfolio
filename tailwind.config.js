@@ -25,6 +25,8 @@ export default {
       boxShadow: {
         "custom-black": "1.5px 1.5px 0px #000000",
         "custom-black-hover": "5px 5px 0px #000000",
+        "custom-inset": "inset 0 0 0 0 var(--tw-shadow-color)",
+        "custom-inset-hover": "inset 100px 0 0 0 var(--tw-shadow-color)",
       },
       keyframes: {
         scroll: {
@@ -34,6 +36,9 @@ export default {
       },
       animation: {
         scroll: "scroll 15s linear infinite",
+      },
+      transitionProperty: {
+        "color-shadow": "color, box-shadow",
       },
     },
   },
