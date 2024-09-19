@@ -13,7 +13,7 @@ export default function SectionBanner({
 
   return (
     <div
-      className={`group relative overflow-hidden border-b-[1px] border-mainAccent ${
+      className={`hover:bg- group relative overflow-hidden border-b-[1px] border-mainAccent duration-300 ${
         isHighlighted && "bg-mainAccent text-white"
       }`}
     >
