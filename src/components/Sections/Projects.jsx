@@ -24,7 +24,10 @@ export default function Projects({ sectionProjectsData, sectionList }) {
                 className="link-custom cursor-pointer underline hover:text-white"
                 style={{ "--tw-shadow-color": "#1E1E1E" }}
               >
-                <a href="https://github.com/Bilek-Petr" target="_blank">
+                <a
+                  href="https://github.com/Bilek-Petr?tab=repositories"
+                  target="_blank"
+                >
                   GitHub repositories
                 </a>
               </span>
