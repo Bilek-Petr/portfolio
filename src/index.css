@@ -4,6 +4,7 @@
 
 html {
   scroll-behavior: smooth;
+  padding-bottom: 0;
 }
 
 body {
