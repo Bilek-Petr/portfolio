@@ -3,7 +3,7 @@ import Nav from "./components/Navigation/Nav";
 import LandingPage from "./components/LandingPage/LandingPage";
 import Sections from "./components/Sections/Sections";
 import Techstack from "./components/TechStack/Techstack";
-import "./App.css";
+import Footer from "./components/Common/Footer";
 
 function App() {
   return (
@@ -17,6 +17,8 @@ function App() {
       ></Sections>
 
       <Techstack techData={data.techstack}></Techstack>
+
+      <Footer></Footer>
     </>
   );
 }
