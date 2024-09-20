@@ -19,7 +19,7 @@ export default function SectionBanner({
     >
       <div
         onClick={toggleExpand}
-        className="flex h-[9rem] cursor-pointer items-center justify-between px-3 sm:px-6 lg:pt-7 xl:pt-12"
+        className="m-auto flex h-[9rem] max-w-[2400px] cursor-pointer items-center justify-between px-3 sm:px-6 lg:pt-7 xl:pt-12"
       >
         <h2
           className={`w-full font-heading text-sectionText font-bold uppercase tracking-tighter transition-none sm:translate-y-0 ${
