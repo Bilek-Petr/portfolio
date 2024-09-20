@@ -33,7 +33,7 @@ export default function AboutMe({ sectionAboutMeData, sectionList }) {
           {/* Image Column */}
           <div className="mb-6 flex-shrink-0 sm:mb-0 sm:w-1/3">
             <img
-              src="/images/profile_photo_phone.webp"
+              src="images/profile_photo_phone.webp"
               alt="Profile Photo"
               className="h-auto max-h-[40rem] w-full object-cover"
             />

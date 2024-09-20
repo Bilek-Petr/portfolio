@@ -109,35 +109,35 @@
         {
           "id": 1,
           "title": "Photosnap Site",
-          "image": "/images/photosnap_site.webp",
+          "image": "images/photosnap_site.webp",
           "codeLink": "https://github.com/Bilek-Petr/photosnap_site",
           "pageLink": "https://bilek-petr.github.io/photosnap_site/"
         },
         {
           "id": 2,
           "title": "IP Tracker",
-          "image": "/images/ip_tracker.webp",
+          "image": "images/ip_tracker.webp",
           "codeLink": "https://github.com/Bilek-Petr/IpTracker",
           "pageLink": "https://bilek-petr.github.io/IpTracker/"
         },
         {
           "id": 3,
           "title": "Product list",
-          "image": "/images/desserts.webp",
+          "image": "images/desserts.webp",
           "codeLink": "https://github.com/Bilek-Petr/product_list",
           "pageLink": "https://bilek-petr.github.io/product_list/"
         },
         {
           "id": 4,
           "title": "Visit Moskenesøy",
-          "image": "/images/visit_moskenesoy.webp",
+          "image": "images/visit_moskenesoy.webp",
           "codeLink": "https://github.com/Bilek-Petr/visit-moskenesoy",
           "progress": "The site is in a progress..."
         },
         {
           "id": 5,
           "title": "Portfolio",
-          "image": "/images/portfolio_site.webp",
+          "image": "images/portfolio_site.webp",
           "codeLink": "https://github.com/Bilek-Petr/portfolio"
         }
       ]
