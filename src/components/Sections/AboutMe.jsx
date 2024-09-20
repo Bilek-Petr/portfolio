@@ -29,7 +29,7 @@ export default function AboutMe({ sectionAboutMeData, sectionList }) {
   return (
     <section id="about-me">
       <SectionBanner bannerTitle={sectionList} isHighlighted={true}>
-        <div className="max-w-screen-[1800px] m-auto flex w-[95%] flex-col sm:flex-row-reverse sm:gap-x-12 sm:py-20 lg:gap-x-36 xl:gap-x-48">
+        <div className="m-auto flex w-11/12 max-w-[1800px] flex-col sm:flex-row-reverse sm:gap-x-12 sm:py-20 lg:w-full lg:gap-x-36 lg:px-5 xl:gap-x-48">
           {/* Image Column */}
           <div className="mb-6 flex-shrink-0 sm:mb-0 sm:w-1/3">
             <img

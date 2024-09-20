@@ -12,18 +12,19 @@ export default function Projects({ sectionProjectsData, sectionList }) {
   return (
     <section id="projects" aria-labelledby="projects-heading">
       <SectionBanner bannerTitle={sectionList}>
-        <div className="m-auto flex w-11/12 max-w-screen-2xl flex-col gap-7 sm:flex-row lg:gap-20 lg:py-20">
+        <div className="m-auto flex w-11/12 max-w-[1800px] flex-col gap-7 pb-10 sm:flex-row lg:mb-20 lg:w-full lg:gap-20 lg:px-5 lg:py-20">
           <header className="flex-1">
             <p
               id="projects-heading"
               className="font-heading text-projectDescription font-bold tracking-tighter"
             >
               {sectionProjectsData.description}
+              <br></br>
               <span
-                className="link-custom !inline cursor-pointer underline hover:text-white" //temporary !important fix
+                className="link-custom cursor-pointer underline hover:text-white"
                 style={{ "--tw-shadow-color": "#1E1E1E" }}
               >
-                <a href="https://github.com/Bilek-Petr" target="_blank">
+                <a href="" target="_blank">
                   GitHub repositories
                 </a>
               </span>
