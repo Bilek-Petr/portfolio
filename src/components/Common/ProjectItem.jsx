@@ -7,12 +7,12 @@ export default function ProjectItem({ item, isExpanded, onToggle }) {
       <article className="flex items-center justify-between py-2">
         <div className="flex gap-5">
           <p
-            className="text-projectTitle font-heading font-bold text-gray-300"
+            className="font-heading text-projectTitle font-bold text-gray-300"
             aria-hidden="true"
           >
             {item.id < 10 ? `0${item.id}` : `${item.id}`}
           </p>
-          <h2 className="text-projectTitle font-heading font-bold">
+          <h2 className="font-heading text-projectTitle font-bold">
             {item.title}
           </h2>
         </div>
@@ -21,7 +21,7 @@ export default function ProjectItem({ item, isExpanded, onToggle }) {
           onClick={() => onToggle(item.id)}
           style={{ transform: isExpanded ? "rotate(180deg)" : "rotate(0deg)" }}
         >
-          <MdOutlineKeyboardArrowDown className="size-6" />
+          <MdOutlineKeyboardArrowDown className="size-5 transition-all duration-300 hover:size-10 sm:size-7" />
         </span>
       </article>
 
@@ -36,21 +36,33 @@ export default function ProjectItem({ item, isExpanded, onToggle }) {
             className="h-auto w-full rounded-lg"
           />
         </figure>
+
+        {item.progress && (
+          <div className="flex justify-center">
+            <span className="font-bold">{item.progress}</span>
+          </div>
+        )}
+
         <div className="my-10 flex justify-center">
-          <a
-            target="_blank"
-            href={item.pageLink}
-            className="block w-full cursor-pointer border-[1px] border-mainAccent p-4 text-center"
-          >
-            See the Page
-          </a>
-          <a
-            target="_blank"
-            href={item.codeLink}
-            className="block w-full cursor-pointer border-[1px] border-mainAccent bg-mainAccent p-4 text-center text-white"
-          >
-            See the Code
-          </a>
+          {item.pageLink && (
+            <a
+              target="_blank"
+              href={item.pageLink}
+              className="block w-full cursor-pointer border-[1px] border-mainAccent p-4 text-center transition duration-300 hover:bg-gray-100"
+            >
+              See the Page
+            </a>
+          )}
+
+          {item.codeLink && (
+            <a
+              target="_blank"
+              href={item.codeLink}
+              className="block w-full cursor-pointer border-[1px] border-mainAccent bg-mainAccent p-4 text-center text-white transition duration-300 hover:bg-opacity-80"
+            >
+              See the Code
+            </a>
+          )}
         </div>
       </div>
       <hr className="text-mainAccent"></hr>
