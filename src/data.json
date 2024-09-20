@@ -129,10 +129,16 @@
         },
         {
           "id": 4,
-          "title": "Multitheme calc",
-          "image": "/images/calc.webp",
-          "codeLink": "https://github.com/Bilek-Petr/calculator-app",
-          "pageLink": "https://bilek-petr.github.io/calculator-app/"
+          "title": "Visit Moskenesøy",
+          "image": "/images/visit_moskenesoy.webp",
+          "codeLink": "https://github.com/Bilek-Petr/visit-moskenesoy",
+          "progress": "The site is in a progress..."
+        },
+        {
+          "id": 5,
+          "title": "Portfolio",
+          "image": "/images/portfolio_site.webp",
+          "codeLink": "https://github.com/Bilek-Petr/portfolio"
         }
       ]
     }
