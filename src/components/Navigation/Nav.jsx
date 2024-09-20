@@ -22,7 +22,7 @@ export default function Nav({ items }) {
     const debounceScroll = debounce(handleScroll, 20);
     window.addEventListener("scroll", debounceScroll);
 
-    // Cleanup event listener when unmounted
+    // Cleanup
     return () => {
       window.removeEventListener("scroll", debounceScroll);
     };
@@ -35,12 +35,16 @@ export default function Nav({ items }) {
           isScrolled ? "sm:translate-y-0" : "sm:-translate-y-full"
         }`}
       />
-      <NavList
-        items={items}
-        toggleExpanded={toggleExpanded}
-        isExpanded={isExpanded}
-        isScrolled={isScrolled}
-      />
+      <div
+        className={`relative sm:flex sm:w-full sm:justify-between ${isExpanded ? "max-h-[100svh] overflow-y-auto" : ""}`}
+      >
+        <NavList
+          items={items}
+          toggleExpanded={toggleExpanded}
+          isExpanded={isExpanded}
+          isScrolled={isScrolled}
+        />
+      </div>
     </nav>
   );
 }

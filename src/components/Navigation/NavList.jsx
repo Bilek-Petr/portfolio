@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import NavItem from "./NavItem";
-import { IoMenuOutline } from "react-icons/io5";
+import Footer from "../Common/Footer";
+import MenuIcon from "../Common/MenuIcon";
 
 export default function NavList({
   items,
@@ -15,19 +16,22 @@ export default function NavList({
           onClick={() => window.scrollTo({ top: 0 })}
           className={`relative z-10 cursor-pointer text-2xl font-bold sm:text-lg xl:text-2xl ${isScrolled ? "sm:text-white" : "sm:text-mainAccent"}`}
         >
-          Logo
+          PB.
         </span>
         <button
           className="sm:hidden"
           aria-label="Toggle menu"
           onClick={toggleExpanded}
         >
-          <IoMenuOutline className="size-8" />
+          <MenuIcon
+            toggleExpanded={toggleExpanded}
+            isExpanded={isExpanded}
+          ></MenuIcon>
         </button>
       </div>
 
       <ul
-        className={`h-[100svh] transition-transform duration-700 sm:flex sm:h-auto sm:items-center sm:gap-4 ${isExpanded ? "block" : "hidden"}`}
+        className={`relative left-0 right-0 top-0 z-50 h-[100svh] transition-transform duration-700 ease-in-out sm:flex sm:h-auto sm:items-center sm:gap-4 ${isExpanded ? "block" : "hidden"}`}
       >
         {items.map((item) => (
           <NavItem
@@ -38,6 +42,9 @@ export default function NavList({
             toggleExpanded={toggleExpanded}
           />
         ))}
+        <div className="sm:hidden">
+          <Footer></Footer>
+        </div>
       </ul>
     </>
   );
