@@ -12,9 +12,9 @@ export default function ProjectItem({ item, isExpanded, onToggle }) {
           >
             {item.id < 10 ? `0${item.id}` : `${item.id}`}
           </p>
-          <h2 className="font-heading text-projectTitle font-bold">
+          <h3 className="font-heading text-projectTitle font-bold">
             {item.title}
-          </h2>
+          </h3>
         </div>
         <span
           aria-expanded={isExpanded}
