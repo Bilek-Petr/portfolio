@@ -13,10 +13,8 @@ export default {
       },
       colors: {
         mainAccent: "#0D1931",
-        primaryTone: "#0593f2",
-        orange900: "#F24822",
-        orange500: "#04A8BF",
-        orange100: "#F2CDC4",
+        primaryTone: "#34A6F2",
+
         mainLight: "#F2F2F2",
         gray500: "#AAAAAA",
         gray100: "#DBDBDB",
