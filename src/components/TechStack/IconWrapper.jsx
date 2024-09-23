@@ -5,7 +5,7 @@ const IconWrapper = ({ IconComponent, gradient }) => (
     className="relative flex items-center justify-center overflow-hidden rounded-full border-[1px] border-mainAccent p-5 transition-transform duration-300 group-hover:scale-125"
     style={{ background: gradient }}
   >
-    <IconComponent className="text-[3rem] transition-transform duration-300 sm:text-[4rem] lg:text-[6rem]" />
+    <IconComponent className="cursor-pointer text-[3rem] text-mainAccent transition-transform duration-300 sm:text-[4rem] lg:text-[6rem]" />
   </div>
 );
 

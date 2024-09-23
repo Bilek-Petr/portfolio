@@ -29,9 +29,9 @@ export default function Nav({ items }) {
   }, []);
 
   return (
-    <nav className="fixed z-20 w-full overflow-hidden bg-white sm:flex sm:justify-between sm:px-4">
+    <nav className="fixed z-20 w-full overflow-hidden bg-mainLight sm:flex sm:justify-between sm:px-4">
       <div
-        className={`absolute left-0 top-0 z-0 hidden h-full w-full bg-mainAccent transition-transform duration-300 sm:block ${
+        className={`bg-primaryTone absolute left-0 top-0 z-0 hidden h-full w-full transition-transform duration-300 sm:block ${
           isScrolled ? "sm:translate-y-0" : "sm:-translate-y-full"
         }`}
       />

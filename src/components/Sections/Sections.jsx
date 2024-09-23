@@ -10,6 +10,7 @@ export default function Sections({ sectionData, sectionLists }) {
         <AboutMe
           sectionAboutMeData={sectionData.aboutMe}
           sectionList={sectionLists.filter((list) => list.title === "About Me")}
+          initiallyExpanded={true}
         ></AboutMe>
 
         <MyJourney

@@ -14,7 +14,7 @@ export default function NavList({
       <div className="flex items-center justify-between px-4 py-4 sm:py-3 xl:py-5">
         <span
           onClick={() => window.scrollTo({ top: 0 })}
-          className={`relative z-10 cursor-pointer text-2xl font-bold sm:text-lg xl:text-2xl ${isScrolled ? "sm:text-white" : "sm:text-mainAccent"}`}
+          className={`relative z-10 cursor-pointer text-2xl font-bold text-mainAccent xl:text-3xl ${isScrolled ? "sm:text-mainLight" : "sm:text-primaryTone"}`}
         >
           PB.
         </span>

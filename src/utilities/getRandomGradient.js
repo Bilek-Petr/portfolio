@@ -1,10 +1,10 @@
 const toolColors = [
-  "#FB923C", // Warm Orange
-  "#F7E03C", // JavaScript Yellow
+  "#13F2F2",
+  "#038C8C",
   "#61DAFB", // React Blue
-  "#A3E633", // Light Green
-  "#E879F9", // Light Purple
-  "#EF4444", // Red
+  "#2A9DF4",
+  "#187BCD",
+  "#04A8BF",
 ];
 
 const generateRandomGradient = () => {

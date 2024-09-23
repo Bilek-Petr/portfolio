@@ -12,18 +12,14 @@ export default function Projects({ sectionProjectsData, sectionList }) {
   return (
     <section id="projects" aria-labelledby="projects-heading">
       <SectionBanner bannerTitle={sectionList}>
-        <div className="m-auto flex w-11/12 max-w-[1800px] flex-col gap-7 pb-10 sm:flex-row lg:mb-20 lg:w-full lg:gap-20 lg:px-5 lg:py-20">
-          <header className="flex-1">
+        <div className="m-auto flex w-11/12 flex-col items-center justify-center py-10 sm:w-full sm:py-16 lg:py-32">
+          <header className="sm:w-3/4 sm:pt-10">
             <p
               id="projects-heading"
               className="font-heading text-projectDescription font-bold tracking-tighter"
             >
               {sectionProjectsData.description}
-              <br></br>
-              <span
-                className="link-custom cursor-pointer underline hover:text-white"
-                style={{ "--tw-shadow-color": "#1E1E1E" }}
-              >
+              <span className="link-custom hover:text-primaryTone cursor-pointer underline transition-colors duration-300">
                 <a
                   href="https://github.com/Bilek-Petr?tab=repositories"
                   target="_blank"
@@ -34,7 +30,7 @@ export default function Projects({ sectionProjectsData, sectionList }) {
             </p>
           </header>
 
-          <div className="my-10 flex-1 sm:my-0">
+          <div className="my-10 max-w-[1000px] flex-1 sm:my-20 sm:w-3/4">
             {sectionProjectsData.items.map((item) => (
               <ProjectItem
                 key={item.id}

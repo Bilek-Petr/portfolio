@@ -43,8 +43,8 @@ export default function Techstack({ techData }) {
   };
 
   return (
-    <section className="m-auto max-w-[2400px]">
-      <h2 className="px-3 text-sectionText font-bold uppercase tracking-[-0.075em] sm:px-6">
+    <section className="m-auto max-w-[2400px] bg-mainLight">
+      <h2 className="flex justify-center text-sectionText font-bold uppercase tracking-[-0.075em] text-mainAccent">
         Tech Stack
       </h2>
       <div className="m-auto flex flex-col overflow-hidden">

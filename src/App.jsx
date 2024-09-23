@@ -8,15 +8,23 @@ import Footer from "./components/Common/Footer";
 function App() {
   return (
     <>
-      <Nav items={data.navigation}></Nav>
-      <LandingPage data={data.landingPage.intro}></LandingPage>
+      <navigation>
+        <Nav items={data.navigation}></Nav>
+      </navigation>
+      <main>
+        <header>
+          <LandingPage data={data.landingPage.intro}></LandingPage>
+        </header>
 
-      <Sections
-        sectionData={data.sectionsData}
-        sectionLists={data.sections.lists}
-      ></Sections>
+        <section>
+          <Sections
+            sectionData={data.sectionsData}
+            sectionLists={data.sections.lists}
+          ></Sections>
+        </section>
 
-      <Techstack techData={data.techstack}></Techstack>
+        <Techstack techData={data.techstack}></Techstack>
+      </main>
 
       <Footer></Footer>
     </>
