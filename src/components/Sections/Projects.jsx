@@ -12,7 +12,7 @@ export default function Projects({ sectionProjectsData, sectionList }) {
   return (
     <section id="projects" aria-labelledby="projects-heading">
       <SectionBanner bannerTitle={sectionList}>
-        <div className="m-auto flex w-11/12 flex-col items-center justify-center py-10 sm:w-full sm:py-16 lg:py-32">
+        <div className="m-auto flex w-11/12 flex-col items-center justify-center py-10 sm:w-full sm:py-16 lg:py-32 lg:text-center">
           <header className="sm:w-3/4 sm:pt-10">
             <p
               id="projects-heading"
