@@ -20,7 +20,7 @@ export default {
         gray100: "#DBDBDB",
       },
       fontSize: {
-        nameHeading: "clamp(5rem, 21vw, 16rem)",
+        nameHeading: "clamp(5rem, 20vw, 16rem)",
         descriptionText: "clamp(1.2rem, 3vw, 5rem)",
         sectionText: "clamp(2.5rem, 14vw, 14rem)",
         aboutMeText: "clamp(0.9rem, 1vw, 1.5rem)",
