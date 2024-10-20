@@ -8,9 +8,9 @@ import Footer from "./components/Common/Footer";
 function App() {
   return (
     <>
-      <navigation>
+      <nav>
         <Nav items={data.navigation}></Nav>
-      </navigation>
+      </nav>
       <main>
         <header>
           <LandingPage data={data.landingPage.intro}></LandingPage>

@@ -2,9 +2,9 @@ import React from "react";
 
 export default function NavItem({ title, link, isScrolled, toggleExpanded }) {
   const baseClasses =
-    "relative z-10 flex w-full justify-center whitespace-nowrap py-5 transition duration-200 hover:scale-105 mx-2";
+    "relative z-10 flex w-full justify-center whitespace-nowrap py-5 transition duration-200 hover:scale-105 ";
   const smClasses =
-    "sm:px-2 sm:py-1 sm:last-of-type:rounded-full sm:border-t-0 sm:last-of-type:border-[1.5px]";
+    "sm:px-2 sm:py-1 sm:last-of-type:rounded-full sm:border-t-0 sm:last-of-type:border-[1.5px] sm-mx2";
   const borderClasses = `border-t-2 border-mainAccent last-of-type:border-b-2  ${
     isScrolled ? "sm:border-mainLight" : "sm:border-primaryTone"
   }`;
